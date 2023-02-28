@@ -1,0 +1,29 @@
+.header{
+    height: 98vh;
+    background-image: linear-gradient(
+        to bottom,
+     rgba($color-fg-orange, 0.8), 
+     rgba($color-fg-orange-lt, 0.8)),
+     url(../img/xfitbg1.jpg);
+    background-size: cover;
+    background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    position: relative;
+
+    &__logo-box{
+        position: absolute;
+        top: 4rem;
+        left: 6rem;
+        color: $color-text-white;
+    }
+    
+    &__text-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}

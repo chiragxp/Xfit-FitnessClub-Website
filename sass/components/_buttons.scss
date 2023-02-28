@@ -1,0 +1,66 @@
+.btn{
+    backface-visibility: hidden;
+
+    &:link,
+    &:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 5rem;
+        transition: all .2s;
+        font-size: $default-font-size;
+        
+    }
+    /* link and visited to avoid the green and purple colorisation of links */
+
+    &--animated{
+        animation-name: moveInUp;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in;
+    }
+
+    &:hover{
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    }
+
+    &:active{
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.2);
+    }
+
+    &--white{
+        background-color: $color-text-white;
+        color: $color-bg-grey;
+    }
+    &--orange{
+        background-color: $color-fg-orange;
+        color: $color-text-white;
+    }
+}
+
+.btn-text{
+    backface-visibility: hidden;
+
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-fg-orange;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-fg-orange;
+        padding: 3px;
+        transition: all .2s;
+    }
+    &:hover{
+        background-color: $color-fg-orange;
+        color: $color-text-white;
+        box-shadow: 0 1rem 2rem rgba($color-bg-grey, .15);
+        transform: translateY(-2px);
+    }
+    &:active{
+        box-shadow: 0 .5rem 2rem rgba($color-bg-grey, .15);
+        transform: translateY(0px);
+    }
+}
